@@ -32,4 +32,4 @@ If the task involves macOS, do *not* suggest iOS-only code. Audio APIs differ. T
 
 ---
 
-Useless comments should not be used. For example, there should be none immediately follow import statements, e.g.: `import { logger } from './logger'; // Assuming logger is needed for internal client logging`. That is an example of a useless comment. You should also not generate any comments saying what was removed or added. Git is used for version tracking, so don't both with these.
+Useless comments should not be used. For example, there should be none immediately follow import statements, e.g.: `import { logger } from './logger'; // Assuming logger is needed for internal client logging`. That is an example of a useless comment. You should also not generate any comments saying what was removed or added. Git is used for version tracking, so don't bother with these.
