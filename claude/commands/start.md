@@ -5,18 +5,25 @@ Get ready to code! This command helps you quickly set up your development enviro
 ## Actions:
 - Check project status
 - Show current directory structure  
-- Display any package.json scripts if available
+- Identify project characteristics
 - Show git status if in a git repo
+- Display any language-specific package scripts if available
 
 Let me help you get started with this project:
 
-## Package Information
-@package.json
+## Project Overview
+!pwd
+!ls -la
+
+## File Structure
+!echo "=== Directory tree ===" && \
+tree -L 2 2>/dev/null || find . -maxdepth 2 -type d | sort
+
+## All Files
+!echo "=== All files in project ===" && \
+find . -maxdepth 2 -type f | sort
 
 ## Git Status
 !git status 2>/dev/null || echo "Not a git repository"
-
-## Available Scripts
-![ -f package.json ] && echo "Available package scripts:" && cat package.json | grep -A 20 '"scripts"' || echo "No package.json found"
 
 Ready to start coding! What would you like to work on?
